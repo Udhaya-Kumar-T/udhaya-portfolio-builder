@@ -48,20 +48,20 @@ export const ExperienceSection = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
               Professional Experience
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-gray-400 text-lg">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <p className="text-gray-400 text-base sm:text-lg">
               My professional journey and key achievements
             </p>
           </div>
 
           {/* Main Professional Experience */}
-          <Card className="bg-gradient-card shadow-xl border-0 hover:shadow-2xl transition-all duration-300 mb-16">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
+          <Card className="bg-gradient-card shadow-xl border-0 hover:shadow-2xl transition-all duration-300 mb-12 sm:mb-16">
+            <CardContent className="p-6 sm:p-8">
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
                 <div className="flex-shrink-0">
                   <div className="p-4 bg-gradient-primary rounded-full">
                     <Briefcase className="w-8 h-8 text-primary-foreground" />
@@ -95,9 +95,9 @@ export const ExperienceSection = () => {
           </Card>
 
           {/* Achievements */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-navy text-center mb-8">Key Achievements</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+          <div className="mb-12 sm:mb-16">
+            <h3 className="text-xl sm:text-2xl font-bold text-navy text-center mb-6 sm:mb-8">Key Achievements</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {achievements.map((achievement, index) => (
                 <Card key={index} className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300 group">
                   <CardContent className="p-6 text-center">
@@ -118,8 +118,8 @@ export const ExperienceSection = () => {
 
           {/* Internships */}
           <div>
-            <h3 className="text-2xl font-bold text-navy text-center mb-8">Internships</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-navy text-center mb-6 sm:mb-8">Internships</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {internships.map((internship, index) => (
                 <Card key={index} className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300 group">
                   <CardContent className="p-6">

@@ -29,24 +29,24 @@ export const SkillsSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
               Skills & Strengths
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-gray-400 text-lg">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <p className="text-gray-400 text-base sm:text-lg">
               Technical expertise and personal qualities
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Technical Skills */}
             <div>
-              <h3 className="text-2xl font-bold text-navy mb-8 flex items-center gap-3">
-                <Code className="w-6 h-6 text-primary-blue" />
+              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-6 sm:mb-8 flex items-center gap-3">
+                <Code className="w-5 h-5 sm:w-6 sm:h-6 text-primary-blue" />
                 Technical Skills
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {technicalSkills.map((skill, index) => (
                   <Card key={index} className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-6">
@@ -69,11 +69,11 @@ export const SkillsSection = () => {
 
             {/* Personal Strengths */}
             <div>
-              <h3 className="text-2xl font-bold text-navy mb-8 flex items-center gap-3">
-                <Award className="w-6 h-6 text-primary-blue" />
+              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-6 sm:mb-8 flex items-center gap-3">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-primary-blue" />
                 Personal Strengths
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {personalStrengths.map((strength, index) => (
                   <Card key={index} className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300 group">
                     <CardContent className="p-6">
@@ -98,9 +98,9 @@ export const SkillsSection = () => {
           </div>
 
           {/* Hobbies */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold text-navy text-center mb-8">Hobbies & Interests</h3>
-            <div className="flex flex-wrap justify-center gap-4">
+          <div className="mt-12 sm:mt-16">
+            <h3 className="text-xl sm:text-2xl font-bold text-navy text-center mb-6 sm:mb-8">Hobbies & Interests</h3>
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
               <div className="px-6 py-3 bg-gradient-primary text-primary-foreground rounded-full shadow-lg">
                 <span className="font-medium">Learning New Things</span>
               </div>

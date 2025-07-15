@@ -6,17 +6,17 @@ export const AboutSection = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
               About Me
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-gray-400 text-lg">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <p className="text-gray-400 text-base sm:text-lg">
               Get to know more about my background and aspirations
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
             {/* Career Objective */}
             <Card className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">

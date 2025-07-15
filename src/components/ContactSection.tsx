@@ -54,21 +54,21 @@ export const ContactSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Get In Touch
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-gray-300 text-lg">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <p className="text-gray-300 text-base sm:text-lg">
               Feel free to reach out for opportunities and collaborations
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-2">
-              <h3 className="text-2xl font-bold mb-8">Contact Information</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Contact Information</h3>
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 {contactInfo.map((contact, index) => (
                   <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
                     <CardContent className="p-6">
@@ -103,8 +103,8 @@ export const ContactSection = () => {
 
             {/* Quick Actions */}
             <div>
-              <h3 className="text-2xl font-bold mb-8">Quick Actions</h3>
-              <div className="space-y-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Quick Actions</h3>
+              <div className="space-y-4 sm:space-y-6">
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <Mail className="w-8 h-8 mx-auto mb-4 text-primary-blue-light" />
@@ -122,9 +122,9 @@ export const ContactSection = () => {
           </div>
 
           {/* Extra-Curricular Activities */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold text-center mb-8">Extra-Curricular Activities</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="mt-12 sm:mt-16">
+            <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8">Extra-Curricular Activities</h3>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {extraCurricular.map((activity, index) => (
                 <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
                   <CardContent className="p-6">

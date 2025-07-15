@@ -14,42 +14,45 @@ export const HeroSection = () => {
           {/* Main content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
                 Udhaya Kumar T
               </h1>
-              <p className="text-2xl md:text-3xl text-primary-blue-light font-light">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-blue-light font-light">
                 Production Engineering Student
               </p>
-              <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed px-4">
                 Seeking challenging opportunities to leverage my engineering skills and expand my knowledge in production engineering and automation.
               </p>
             </div>
 
             {/* Contact Info */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm md:text-base">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm md:text-base px-4">
               <div className="flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4 text-primary-blue-light" />
-                <span>+91 7339443310</span>
+                <Phone className="w-4 h-4 text-primary-blue-light flex-shrink-0" />
+                <span className="text-center">+91 7339443310</span>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4 text-primary-blue-light" />
-                <span>udhayathangavel03@gmail.com</span>
+                <Mail className="w-4 h-4 text-primary-blue-light flex-shrink-0" />
+                <span className="text-center break-words">udhayathangavel03@gmail.com</span>
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <MapPin className="w-4 h-4 text-primary-blue-light" />
-                <span>Erode, Tamil Nadu</span>
+              <div className="flex items-center justify-center gap-2 sm:col-span-2 lg:col-span-1">
+                <MapPin className="w-4 h-4 text-primary-blue-light flex-shrink-0" />
+                <span className="text-center">Erode, Tamil Nadu</span>
               </div>
             </div>
 
             {/* Action buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Button 
                 size="lg" 
                 variant="outline"
-                className="px-8 py-6 text-lg border-primary-blue-light text-primary-blue-light hover:bg-primary-blue-light hover:text-navy"
+                className="px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-primary-blue-light text-primary-blue-light hover:bg-primary-blue-light hover:text-navy w-full sm:w-auto"
+                asChild
               >
-                <Mail className="w-5 h-5 mr-2" />
-                Contact Me
+                <a href="mailto:udhayathangavel03@gmail.com">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Contact Me
+                </a>
               </Button>
             </div>
           </div>

@@ -30,17 +30,17 @@ export const EducationSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
               Education
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-gray-400 text-lg">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <p className="text-gray-400 text-base sm:text-lg">
               My academic journey and achievements
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {education.map((edu, index) => (
               <Card key={index} className="bg-gradient-card shadow-lg border-0 hover:shadow-xl transition-all duration-300 group">
                 <CardContent className="p-8">

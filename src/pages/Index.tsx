@@ -6,6 +6,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -39,6 +40,8 @@ const Index = () => {
       <div id="contact">
         <ContactSection />
       </div>
+      
+      <WhatsAppFloat />
     </div>
   );
 };
