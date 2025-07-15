@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Calendar, Download, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Calendar, ExternalLink } from "lucide-react";
 
 export const ContactSection = () => {
   const contactInfo = [
@@ -105,19 +105,6 @@ export const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-8">Quick Actions</h3>
               <div className="space-y-6">
-                <Card className="bg-gradient-primary shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-6 text-center">
-                    <Download className="w-8 h-8 mx-auto mb-4" />
-                    <h4 className="font-bold mb-2">Download Resume</h4>
-                    <p className="text-sm text-primary-blue-light mb-4">
-                      Get the latest version of my resume
-                    </p>
-                    <Button variant="secondary" className="w-full">
-                      Download PDF
-                    </Button>
-                  </CardContent>
-                </Card>
-
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <Mail className="w-8 h-8 mx-auto mb-4 text-primary-blue-light" />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,14 +63,6 @@ export const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
-              variant={isScrolled ? "professional" : "outline"}
-              size="sm"
-              className={!isScrolled ? "border-primary-blue-light text-primary-blue-light hover:bg-primary-blue-light hover:text-navy" : ""}
-            >
-              <Download className="w-4 h-4 mr-2" />
-              Resume
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,10 +91,6 @@ export const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button variant="professional" size="sm" className="w-full mt-4">
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
-              </Button>
             </div>
           </div>
         )}

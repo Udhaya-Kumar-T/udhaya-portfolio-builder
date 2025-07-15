@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Download, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -43,14 +43,6 @@ export const HeroSection = () => {
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                variant="professional"
-                className="px-8 py-6 text-lg"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume
-              </Button>
               <Button 
                 size="lg" 
                 variant="outline"
