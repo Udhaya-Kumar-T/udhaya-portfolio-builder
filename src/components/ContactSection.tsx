@@ -151,7 +151,7 @@ export const ContactSection = () => {
           {/* Footer */}
           <div className="text-center mt-16 pt-8 border-t border-white/20">
             <p className="text-gray-400 text-sm">
-              © 2024 Udhaya Kumar T. All rights reserved.
+              © 2025 Udhaya Kumar T. All rights reserved.
             </p>
           </div>
         </div>
